@@ -3,7 +3,7 @@ name = "move-demo-project"
 version = "0.0.0"
 
 [addresses]
-Account = "0x1"
+Sender = "0x1"
 
 [dependencies.MoveStdlib]
 git = "https://github.com/pontem-network/move-stdlib"

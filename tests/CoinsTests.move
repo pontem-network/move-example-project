@@ -1,5 +1,5 @@
 #[test_only]
-module Sender::BalanceTests {
+module Sender::CoinsTests {
     use Std::Signer;
     use Sender::Coins;
 
