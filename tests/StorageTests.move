@@ -1,8 +1,8 @@
 #[test_only]
-module Account::StorageTests {
-    use Account::Storage;
+module Sender::StorageTests {
+    use Sender::Storage;
 
-    #[test(account = @0x01)]
+    #[test(account = @Sender)]
     /// Test storage with `u128` number.
     fun store_u128(account: signer) {
         let value: u128 = 100;
@@ -11,7 +11,7 @@ module Account::StorageTests {
         assert!(value == Storage::get<u128>(&account), 101);
     }
 
-    #[test(account = @0x01)]
+    #[test(account = @Sender)]
     #[expected_failure(abort_code = 101)]
     /// Test store value twice.
     fun store_existing_resource(account: signer) {
@@ -21,7 +21,7 @@ module Account::StorageTests {
         Storage::store(&account, value);
     }
 
-    #[test(account = @0x01)]
+    #[test(account = @Sender)]
     #[expected_failure(abort_code = 102)]
     /// Test get missed value.
     fun get_missed_value(account: signer) {

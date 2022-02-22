@@ -2,7 +2,7 @@
 /// It's utilizing Move language generics to store any kind of data under user account as resource.
 /// The `scripts` folder contains example which utilizing Storage module.
 /// To get familiar with generics, resources, and other Move concepts visit https://diem.github.io/move/introduction.html
-module Account::Storage {
+module Sender::Storage {
     use Std::Signer;
 
     /// Define `Storage` resource.
