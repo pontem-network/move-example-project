@@ -9,7 +9,9 @@ module Sender::CoinsTests {
 
         let coins_10 = Coins::mint(10);
 
-        Coins::deposit(&acc, coins_10);
+        Coins::create_balance(&acc);
+
+        Coins::deposit(acc_addr, coins_10);
         assert!(Coins::balance(acc_addr) == 10, 1);
 
         let coins_5 = Coins::withdraw(&acc, 5);
