@@ -1,6 +1,6 @@
 [package]
-name = "move-demo-project"
-version = "0.0.0"
+name = "example-project"
+version = "0.0.1"
 
 [addresses]
 Sender = "0x1"
