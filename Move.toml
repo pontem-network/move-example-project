@@ -1,5 +1,5 @@
 [package]
-name = "move-demo-project"
+name = "example-project"
 version = "0.0.0"
 
 [addresses]
