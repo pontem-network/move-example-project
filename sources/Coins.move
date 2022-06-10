@@ -1,4 +1,5 @@
-/// An example of how you can implement balance and coins logic.
+/// An example of how you can implement balance and coins logic WITHOUT Aptos Framework, but in Move.
+/// Could be useful if you indeed want to learn how it works in Background in Move.
 ///
 /// THIS IS JUST EXAMPLE AND NOT FOR PRODUCTION USAGE.
 ///
